@@ -1,2 +1,10 @@
+# IDE's
+.idea
+
+# autogenrated files
 *.class
 *.log
+target/
+project/target/
+project/project/
+.bsp
