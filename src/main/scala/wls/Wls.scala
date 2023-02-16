@@ -10,4 +10,9 @@ class Wls(val xPoints: Array[Double], val yPoints: Array[Double], val weights: A
 
   def this(xPoints: Array[Double], yPoints: Array[Double]) =
     this(xPoints, yPoints, 1.0)
+
+  def fitLinearRegression(): Point = {
+
+    new Point(0.0, 0.0)
+  }
 }
