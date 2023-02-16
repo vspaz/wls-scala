@@ -1,0 +1,5 @@
+package wls
+
+class WlsTest {
+
+}
