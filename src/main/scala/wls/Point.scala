@@ -1,5 +1,5 @@
 package wls
 
-class Point {
+class Point(val intercept: Double, val slope: Double) {
 
 }
