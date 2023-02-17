@@ -14,9 +14,9 @@ class WlsTest extends AnyFunSuite {
   }
 
   test("org.vspaz.wls.TestWlsConstructorOk") {
-    new Wls(Array(1.0), Array(1.0), 1.0)
-    new Wls(Array(1.0), Array(1.0), Array(1.0))
-    new Wls(Array(1.0), Array(1.0))
+    new Wls(Array(1.0, 2.0), Array(1.0, 2.0), 1.0)
+    new Wls(Array(1.0, 2.0), Array(1.0, 2.0), Array(1.0, 1.0))
+    new Wls(Array(1.0, 2.0), Array(1.0, 2.0))
   }
 
   test("org.vspaz.wls.TestWlsModelWithStableWeightOk") {
