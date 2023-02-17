@@ -60,4 +60,13 @@ class WlsTest extends AnyFunSuite {
     assertEquals(1.0, point.slope)
   }
 
+  test("org.vspaz.wls.TestWlsModelRunDownhillOk") {
+    val x: Array[Double] = Array(1.0, 0.0)
+    val y: Array[Double] = Array(0.0, 1.0)
+
+    val point = new Wls(x, y).fitLinearRegression().get
+
+    assertEquals(1.0, point.intercept)
+    assertEquals(-1.0, point.slope)
+  }
 }
