@@ -23,8 +23,7 @@ class Wls(val xPoints: Array[Double], val yPoints: Array[Double], val weights: A
     var Wi = 0.0
     var XiByWi = 0.0
 
-    var i = 0
-    while (i < this.xPoints.length) {
+    for (i <- this.xPoints.indices) {
       Xi = this.xPoints(i)
       Yi = this.yPoints(i)
       Wi = this.weights(i)
@@ -34,8 +33,6 @@ class Wls(val xPoints: Array[Double], val yPoints: Array[Double], val weights: A
       sumOfXByYByWeights += XiByWi * Yi
       sumOfYByWeights += Yi * Wi
       sumOfWeightsByXSquared += XiByWi * Xi
-
-      i += 1
     }
 
     val dividend = sumOfWeights * sumOfXByYByWeights - sumOfXByWeights * sumOfYByWeights
