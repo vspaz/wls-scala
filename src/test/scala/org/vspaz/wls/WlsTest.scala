@@ -1,7 +1,8 @@
-package wls
+package org.vspaz.wls
 
 import org.junit.jupiter.api.Assertions.{assertEquals, assertTrue}
 import org.scalatest.funsuite.AnyFunSuite
+
 
 class WlsTest extends AnyFunSuite {
   val delta = 1.0e-6

@@ -1,4 +1,4 @@
-package wls
+package org.vspaz.wls
 
 class Wls(val xPoints: Array[Double], val yPoints: Array[Double], val weights: Array[Double]) {
   assert(xPoints.length == yPoints.length)

@@ -12,6 +12,8 @@ assumptions.
 ## How-to
 
 ```scala
+package org.vspaz.wls
+
 val xPoints: Array[Double] = Array(1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0)
 val yPoints: Array[Double] = Array(1.0, 3.0, 4.0, 5.0, 2.0, 3.0, 4.0)
 val weights: Array[Double] = Array(1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0)
